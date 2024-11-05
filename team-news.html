@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-highway.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Varela+Round">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>TEAM NEWS</title>
+</head>
+<body>
+    <!-- Sidebar/menu -->
+    <nav class="w3-sidebar w3-black w3-border-right w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+        <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+        <div class="w3-container">
+            <h1 class="w3-center w3-jumbo"><i class="fa-solid fa-spider"></i></h1>
+            <h3 class="w3-center w3-padding-32"><b>SAN FRANCISCO<br>SPIDERS</b></h3>
+        </div>
+        <div class="w3-bar-block">
+            <a href="./index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-pink">Home</a> 
+            <a href="./who-we-are.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-pink">Who We Are</a>
+            <a href="./team-news.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-pink">Team News</a> 
+            <a href="./roster.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-pink">Player Rosters</a>
+            <a href="./team-wins.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-pink">Tournament Wins</a>
+            <a href="./hall-of-fame.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-pink">Hall of Fame</a>
+            <a href="./photo-gallery.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-pink">Media Gallery</a>
+            <a href="./contact.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-pink">Contact Us</a>
+            <!-- <a href="#partners" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-pink">Partners</a> -->
+        </div>
+    </nav>
+
+    <!-- Top menu on small screens -->
+    <header class="w3-container w3-top w3-hide-large w3-black w3-xlarge w3-padding">
+        <a href="javascript:void(0)" class="w3-button w3-black w3-margin-right" onclick="w3_open()">☰</a>
+        <span>SF SPIDERS</span>
+    </header>
+    <!-- Overlay effect when opening sidebar on small screens -->
+    <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+    <!-- !PAGE CONTENT! -->
+    <div class="w3-main" style="margin-left:340px;margin-right:40px">
+        <!-- Team News -->
+        <div class="w3-container" id="hall-pf-fame" style="margin-top:75px">
+            <h1 class="w3-xxxlarge w3-text-black"><b>Team News.</b></h1>
+            <hr style="width:50px;border:5px solid black" class="w3-round">
+
+            <!-- Photo grid (modal) -->
+            <div class="w3-row-padding">
+                <!-- JESSICA ALL CITY POST -->
+                <div>
+                    <p class="w3-xxlarge"><b>
+                        Jessica Reyes: All-City Player in Two Sports!
+                    </b></p>
+                    <p class="w3-large">
+                        Our very own Coach Jessica is an incoming Senior and three-sport athlete at George Washington High School (Volleyball, Basktball, and Softball). 
+                        As a Junior, she earned All-City Second-Team Honors as a starting guard on the Lady Eagles Varsity Basketball Team
+                        as well as All-City Honorable Mention as a versatile outfielder for the Varsity Softball Team.
+                        We are very proud of Coach Jess and will continue to support her as she attempts to keep the momentum going into her Senior Year!
+                    </p>
+                    <p class="w3-large w3-center"><b>Click the images below for the full All-City Girl's Basketball and Softball Teams</b></p>
+                </div>
+
+                <div class="w3-half w3-center">
+                    <img src="assets\23-24-all-city-basketball.png" style="width:50%" onclick="onClick(this)" alt="2023-24 All-City Girl's Basketball">
+                </div>
+                <div class="w3-half w3-center">
+                    <img src="assets\23-24-all-city-softball.png" style="width:50%" onclick="onClick(this)" alt="2023-24 All-City Softball">
+                </div>
+            </div>
+            <!-- Modal for full size images on click-->
+            <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+                <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+                <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+                    <img id="img01" class="w3-image">
+                    <p id="caption" class="w3-opacity w3-large"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- W3.CSS Container -->
+    <div class="w3-black w3-container w3-padding-32" style="margin-top:75px;padding-right:58px">
+        <p class="w3-right"><i class="fa-regular fa-copyright"></i> 2024 San Francisco Spiders. Powered by <a href="https://www.jesusthomasreyes.netlify.app" title="jesusthomasreyes" target="_blank" class="w3-hover-opacity">Jesus Thomas Reyes | Full-Stack Developer</a></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
