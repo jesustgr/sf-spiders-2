@@ -24,7 +24,7 @@
             <a href="./coaches.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-pink">Meet The Coaches</a>
             <a href="./news.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-pink">Team News</a> 
             <a href="./roster.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-pink">Player Rosters</a>
-            <!-- <a href="./team-wins.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-pink">Tournament Wins</a> -->
+            <a href="./team-wins.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-pink">Tournament Wins</a>
             <a href="./hall-of-fame.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-pink">Hall of Fame</a>
             <a href="./gallery.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-pink">Media Gallery</a>
             <a href="./contact.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-pink">Contact Us</a>
@@ -47,49 +47,10 @@
             <h1 class="w3-xxxlarge w3-text-black"><b>Media Gallery.</b></h1>
             <hr style="width:50px;border:5px solid black" class="w3-round">
 
-            <h1 class="w3-xxlarge w3-center"><b>TOURNAMENT WINS!</b></h1>
-
-            <div class="w3-row-padding">
-                <div class="w3-col m4 w3-margin-bottom">
-                    <div class="shadow w3-black win">
-                        <img src="assets/summer-jam.jpg" alt="Summer Jam" style="width:100%" onclick="onClick(this)">
-                        <div class="w3-container">
-                            <h4><b>2023 Bam Summer Jam 13U</b></h4>
-                            <p class="w3-opacity">AUGUST 19, 2023</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="w3-col m4 w3-margin-bottom">
-                    <div class="shadow w3-black win">
-                        <img src="assets/fall-tip-off.jpg" alt="Fall Tip Off" style="width:100%" onclick="onClick(this)">
-                        <div class="w3-container">
-                            <h4><b>2023 Bam Fall Tip Off 14U</b></h4>
-                            <p class="w3-opacity">SEPTEMBER 16, 2023</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="w3-col m4 w3-margin-bottom">
-                    <div class="shadow w3-black win">
-                        <img src="assets/hardwood-showdown.PNG" alt="Hardwood Showdown" style="width:100%" onclick="onClick(this)">
-                        <div class="w3-container">
-                            <h5><b>2023 Bam Hardwood Showdown 14U</b></h5>
-                            <p class="w3-opacity">SEPTEMBER 30, 2023</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- Modal for full size images on click-->
-                <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
-                    <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
-                    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
-                        <img id="img01" class="w3-image">
-                        <p id="caption" class="w3-opacity w3-large"></p>
-                    </div>
-                </div>
-            </div>
-
             <h1 class="w3-xxlarge w3-center"><b>COACHES' HIGHLIGHTS</b></h1>
+            <hr style="margin:auto;width:50px;border:5px solid black" class="w3-round">
 
-            <div class="w3-row-padding">
+            <div style="padding-top:2.5%" class="w3-row-padding">
                 <div class="w3-col m6 w3-margin-bottom">
                     <div class="video-container">
                         <iframe class="shadow" width="100%" height="315" src="https://www.youtube.com/embed/7Ceu-e3P67A?si=aY_1hEJiqG1hsCC5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -101,13 +62,48 @@
                     </div>
                 </div>
             </div>
+
+            <h1 class="w3-xxlarge w3-center" style="padding-top: 2.5%;"><b>TEAM EVENTS</b></h1>
+            <hr style="margin:auto;width:50px;border:5px solid black" class="w3-round">
+
+            <div class="w3-row-padding">
+                <div class="w3-half">
+                    <div style="padding-top:2.5%;">
+                        <h1 style="margin-bottom: 0;" class="w3-xlarge w3-center"><b><u>Secret Santa 2024</u></b></h1>
+                        <img src="assets\christmas-night.jpg" style="width:100%" onclick="onClick(this)" alt="">
+                    </div>
+                    <div style="padding-top:2.5%">
+                        <h1 style="margin-bottom: 0;" class="w3-xlarge w3-center"><b><u>Dave and Buster's Night 2024</u></b></h1>
+                        <img src="assets\dave-and-busters.JPG" style="width:100%" onclick="onClick(this)" alt="">
+                    </div>               
+                </div>
+                <div class="w3-half">
+                    <div style="padding-top:2.5%">
+                        <h1 style="margin-bottom: 0;" class="w3-xlarge w3-center"><b><u>Movie Night 2024</u></b></h1>
+                        <img src="assets\movie-night.jpg" style="width:100%" onclick="onClick(this)" alt="">                
+                    </div>  
+                    <div style="padding-top:2.5%;">
+                        <h1 style="margin-bottom: 0;" class="w3-xlarge w3-center"><b><u>Team Dinner 2024</u></b></h1>
+                        <img src="assets\team-dinner.jpg" style="width:100%" onclick="onClick(this)" alt="">                                
+                    </div>  
+                </div>
+
+                <!-- Modal for full size images on click-->
+                <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+                    <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+                    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+                        <img id="img01" class="w3-image">
+                        <p id="caption" class="w3-opacity w3-large"></p>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
     <!-- W3.CSS Container -->
-    <div class="w3-black w3-container w3-padding-32 gallery-footer" style="margin-top:75px;padding-right:58px">
+    <footer class="w3-black w3-container w3-padding-32">
         <p class="w3-right"><i class="fa-regular fa-copyright"></i> 2024 San Francisco Spiders. Powered by <a href="https://www.jesusthomasreyes.netlify.app" title="jesusthomasreyes" target="_blank" class="w3-hover-opacity">Jesus Thomas Reyes | Full-Stack Developer</a></p>
-    </div>
+    </footer>
 
     <script src="script.js"></script>
 </body>

@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-highway.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Varela+Round">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="style.css">
-    <title>HALL OF FAME</title>
+    <title>MEDIA</title>
 </head>
 <body>
     <!-- Sidebar/menu -->
@@ -31,7 +31,7 @@
             <!-- <a href="#partners" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-pink">Partners</a> -->
         </div>
     </nav>
-
+    
     <!-- Top menu on small screens -->
     <header class="w3-container w3-top w3-hide-large w3-black w3-xlarge w3-padding">
         <a href="javascript:void(0)" class="w3-button w3-black w3-margin-right" onclick="w3_open()">☰</a>
@@ -42,41 +42,41 @@
 
     <!-- !PAGE CONTENT! -->
     <div class="w3-main" style="margin-left:340px;margin-right:40px">
-        <!-- Hall of Fame -->
+        <!-- Photo Gallery -->
         <div class="w3-container" id="hall-pf-fame" style="margin-top:75px">
-            <h1 class="w3-xxxlarge w3-text-black"><b>Hall of Fame.</b></h1>
+            <h1 class="w3-xxxlarge w3-text-black"><b>Tournament Wins.</b></h1>
             <hr style="width:50px;border:5px solid black" class="w3-round">
 
-            <!-- 2024 HOF -->
-            <h1 class="w3-xxlarge w3 text-black"><b>2024 Inductee: Jaymond Lin</b></h1>
+            <h1 class="w3-xxlarge w3-center"><b>TOURNAMENT WINS!</b></h1>
 
             <div class="w3-row-padding">
-                <div class="w3-half">
-                    <img src="assets\jaymond-hof.jpg" style="width:100%" onclick="onClick(this)" alt="">           
+                <div class="w3-col m4 w3-margin-bottom">
+                    <div class="shadow w3-black win">
+                        <img src="assets/summer-jam.jpg" alt="Summer Jam" style="width:100%" onclick="onClick(this)">
+                        <div class="w3-container">
+                            <h4><b>2023 Bam Summer Jam 13U</b></h4>
+                            <p class="w3-opacity">AUGUST 19, 2023</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="w3-half">
-                    <div class="w3-container">
-                        <p class="w3-text-black" style="padding-top: 2.5%;">
-                            Jaymond Lin joined the SF Spiders organization in 7th grade and quickly became known for his dedication, skill, and leadership on the court. Over the years, he developed into a key player, contributing to the team's success and embodying the core values of hard work and perseverance. Jaymond’s commitment to improving his game and his sportsmanship set him apart as both a player and a teammate. After honing his skills with the Spiders, he now continues his basketball journey at Sacred Heart Cathedral. Jaymond’s path with the SF Spiders serves as a testament to his growth and potential, and he remains an inspiration for future generations of players in the organization.
-                        </p>
-                    </div> 
+                <div class="w3-col m4 w3-margin-bottom">
+                    <div class="shadow w3-black win">
+                        <img src="assets/fall-tip-off.jpg" alt="Fall Tip Off" style="width:100%" onclick="onClick(this)">
+                        <div class="w3-container">
+                            <h4><b>2023 Bam Fall Tip Off 14U</b></h4>
+                            <p class="w3-opacity">SEPTEMBER 16, 2023</p>
+                        </div>
+                    </div>
                 </div>
-            </div>
-
-            <!-- 2023 HOF -->
-            <h1 class="w3-xxlarge w3 text-black" style="margin-top: 5%;"><b>2023 Inductees: 2021 Lady Spiders 15U</b></h1>
-            
-            <!-- Photo grid (modal) -->
-            <div class="w3-row-padding">
-                <div class="w3-half">
-                    <img src="assets\img-hof-1.jpg" style="width:100%" onclick="onClick(this)" alt="">
-                    <img src="assets\img-hof-2.jpg" style="width:100%" onclick="onClick(this)" alt="">                
+                <div class="w3-col m4 w3-margin-bottom">
+                    <div class="shadow w3-black win">
+                        <img src="assets/hardwood-showdown.PNG" alt="Hardwood Showdown" style="width:100%" onclick="onClick(this)">
+                        <div class="w3-container">
+                            <h5><b>2023 Bam Hardwood Showdown 14U</b></h5>
+                            <p class="w3-opacity">SEPTEMBER 30, 2023</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="w3-half">
-                    <img src="assets\img-hof-3.jpg" style="width:100%" onclick="onClick(this)" alt="">                
-                    <img src="assets\img-hof-4.jpg" style="width:100%" onclick="onClick(this)" alt="">                                
-                </div>
-
                 <!-- Modal for full size images on click-->
                 <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
                     <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
@@ -86,28 +86,6 @@
                     </div>
                 </div>
             </div>
-            
-            <!-- Hall of Fame Description -->
-            <p class="w3-large w3-text-black" style="margin-top:50px;"><b>
-                Depicted above are the original SF Spiders: the 2021 LADY SPIDERS 15U, or as we like to call them ... THE DREAM TEAM.
-                This is the team that started it all. At this time before she was a coach, Coach Jess was a player on this team as a
-                freshman at Washington High School. Wearing our homemade jerseys, this team truly represented what it means to be a
-                Spider. Every practice and every game, good or bad, win or lose, they showed RESILIENCE and DEDICATION. And had fun doing it!
-                Our organization has come a long way since these days, but these girls will always be the OG's!
-            </b></p>
-            <p class="w3-xlarge w3-center w3-text-black"><b><u>
-                ROSTER
-            </u></b></p>
-            <p class="w3-large w3-center w3-text-black"><b>
-                Jessie Chau | Washington 2025<br>
-                Cerene Lee | Washington 2024<br>
-                Faye Lee | Lowell 2025<br>
-                Avery Lin | Pac Bay 2026<br>
-                Lydia Meier | Washington 2025<br>
-                Izzy Poon | Lincoln 2026<br>
-                Jessica Reyes | Washington 2025<br>
-                Samantha Reyes | Carondelet 2025
-            </b></p>
         </div>
     </div>
 
@@ -118,4 +96,4 @@
 
     <script src="script.js"></script>
 </body>
-</html
+</html>
